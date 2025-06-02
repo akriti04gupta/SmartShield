@@ -52,6 +52,28 @@ SmartShield is an advanced malware detection and secure image-sharing system tha
 5. 🚫 **Unauthorized attempts** lead to image corruption or destruction
 
 ---
+##  Project Strcuture
+
+smartshield/
+│
+├── backend/
+│   ├── app.py
+│   ├── model/
+│   │   └── ensemble_model.pkl
+│   └── utils/
+│       └── steganography.py
+│
+├── frontend/
+│   ├── index.html
+│   └── extension/
+│       ├── manifest.json
+│       ├── popup.tsx
+│       ├── background.ts
+│       ├── utils/
+│       │   └── imageUtils.ts
+│       └── style.css
+│
+└── README.md
 
 ## 🧰 Installation
 
