@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartShield</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white p-4 rounded-xl shadow-lg w-80 font-sans border border-red-600 transition-colors duration-500">
+  <div class="text-center">
+    <img src="icons/icon128.png" class="mx-auto w-16 mb-2 transition-transform duration-300 hover:scale-110" alt="SmartShield">
+    <h1 class="text-xl font-bold text-red-500 mb-2">SmartShield Alert</h1>
+    <p class="text-gray-300 mb-4 text-sm">An image download was detected. Scan the image for potential threats before saving.</p>
+    <button id="checkBtn" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all font-semibold shadow-md">
+      🔍 Check Image
+    </button>
+    <p id="status" class="text-sm mt-4 text-gray-400 italic transition-opacity duration-300"></p>
+    <div class="mt-4 flex justify-center items-center gap-2">
+      <label class="text-xs text-gray-400">🌙 Dark</label>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+      </label>
+      <label class="text-xs text-gray-400">☀️ Light</label>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

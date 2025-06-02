@@ -1,0 +1,1 @@
+// Optional: Can be used for future content-based scanning
