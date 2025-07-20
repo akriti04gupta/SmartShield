@@ -34,10 +34,31 @@ SmartShield is an advanced malware detection and secure image-sharing system tha
 - SQLAlchemy + SQLite
 - Steganography libraries (`cv2`, `Pillow`)
 
-### 🧠 Machine Learning
-- ResNet50 (feature extractor)
-- Ensemble Model: SVM, Random Forest, Logistic Regression
-- `joblib` for model serialization
+## 🧠 AI/ML Tech Stack
+
+- **ResNet50** – Used as a feature extractor for malware images.
+- **Ensemble Classifier** – Combination of:
+  - Support Vector Machine (SVM)
+  - Random Forest
+  - Logistic Regression
+- **VotingClassifier** – Implements soft voting for better accuracy.
+- **Malimg Dataset** – Dataset of malware images used for training and evaluation.
+- **Joblib** – Used for saving and loading the trained model (`svm_model.pkl`).
+
+---
+
+## 🖥️ Web Tech Stack
+
+| Layer       | Tech Used                |
+|-------------|--------------------------|
+| Frontend    | React.js, Tailwind CSS   |
+| Backend     | Flask (Python)           |
+| Steganography | Stegano (Python)        |
+| Database    | MongoDB                  |
+| Auth        | Email/Password Login     |
+
+---
+
 
 ---
 
