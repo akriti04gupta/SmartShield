@@ -73,6 +73,17 @@ SmartShield is an advanced malware detection and secure image-sharing system tha
 5. 🚫 **Unauthorized attempts** lead to image corruption or destruction
 
 ---
+
+## 🧠 Malware Detection Flow
+
+- ResNet50 pre-trained model is used for feature extraction.
+- Extracted features are passed to a soft voting ensemble model:
+  - SVM (linear kernel)
+  - Random Forest (n=100)
+  - Logistic Regression
+- Predicts one of the 25 malware classes from **Malimg dataset**.
+- If confidence < threshold (e.g., 60%), returns "No Malware".
+
 ##  Project Strcuture
 
 smartshield/
